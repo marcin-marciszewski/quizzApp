@@ -12,13 +12,13 @@ body {
     background-color: #000;
 }
 
-#home {
+#home,
+#info {
     width: 100vw;
     height: 100vh;
 }
 
 #home-menu {
-
     position: relative;
     color: #fff;
     width: 40%;
@@ -29,7 +29,7 @@ body {
 }
 
 #home-menu>h1 {
-    font-size: 4rem;
+    font-size: 3.5vw;
     margin: 2rem 0;
 }
 
@@ -37,13 +37,20 @@ body {
 #home-menu:after {
     content: "";
     position: absolute;
-
     width: 101%;
-    height: 103%;
+    height: 102%;
     background: linear-gradient(45deg, red, yellow, green, blue, yellow, purple);
     z-index: -1;
     background-size: 400%;
     animation: borderbg 40s linear infinite;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.btn {
+    padding: 10px 30px;
 }
 
 @keyframes borderbg {
@@ -67,20 +74,59 @@ body {
 
 .btn {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.2vw;
     margin-bottom: 20px;
 
 }
 
 /* Media queries */
-@media (max-width: 576px) {
+
+@media (max-width: 768px) {
+
+    #home-menu {
+        width: 70%;
+        ;
+    }
+
     #home-menu>h1 {
-        font-size: 1rem;
+        font-size: 7vw;
+
     }
 
     #home-menu:before,
     #home-menu:after {
-        width: 103%;
+        width: 102%;
         height: 102%;
     }
+
+    .btn {
+        font-size: 3vw;
+
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    #home-menu {
+        width: 70%;
+        ;
+    }
+
+    #home-menu>h1 {
+        font-size: 6vw;
+
+    }
+
+    #home-menu:before,
+    #home-menu:after {
+        width: 101%;
+        height: 102%;
+    }
+
+    .btn {
+        font-size: 3vw;
+
+    }
+
 }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/game.css">
+    <title>The Quiz</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div id="info" class="d-flex align-items-center justify-content-center ">
+            <div id="loader"></div>
+
+            <div id="info-menu" class=" d-flex flex-column justify-content-center  hidden">
+                <div class="info-top d-flex justify-content-between">
+                    <div class="info-item ">
+                        <p id="progress-text">
+                            Question
+                        </p>
+                        <div id="progress-bar">
+                            <div id="progress-bar__fill"></div>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <p class="info-prefix">
+                            Score
+                        </p>
+                        <h1 class="info-main-text" id="score">0</h1>
+                    </div>
+                </div>
+                <h2 class="question text-center">Current question</h2>
+                <div class="answers-container d-flex">
+                    <p class="answer-prefix">A</p>
+                    <p class="answer-text text-center" data-number="1">loreasjkdg ajgsd fjaslkg ajs</p>
+                </div>
+                <div class="answers-container d-flex">
+                    <p class="answer-prefix">B</p>
+                    <p class="answer-text text-center" data-number="2">loreasjkdg ajgsd fjaslkg ajs</p>
+                </div>
+                <div class="answers-container d-flex">
+                    <p class="answer-prefix">C</p>
+                    <p class="answer-text text-center" data-number="3">loreasjkdg ajgsd fjaslkg ajs</p>
+                </div>
+                <div class="answers-container d-flex">
+                    <p class="answer-prefix">D</p>
+                    <p class="answer-text text-center" data-number="4">loreasjkdg ajgsd fjaslkg ajs</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>
