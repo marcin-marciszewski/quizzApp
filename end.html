@@ -7,18 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/highscores.css">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Hihg Scores</title>
+    <title>The Quiz</title>
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="d-flex align-items-center justify-content-center">
-            <div id="high-scores" class=" d-flex flex-column align-items-center justify-content-center">
-                <h1 id="final-score">High Scores</h1>
-                <ul id="high-score-list"></ul>
+            <div id="end" class=" d-flex flex-column align-items-center justify-content-center">
+                <h1 id="final-score"></h1>
+                <form>
+                    <input type="text" name="username" id="username" placeholder="username">
+                    <button type="submit" id="save-score" class="btn btn-outline-primary" onclick="saveHighScore(event)"
+                        disabled>Save</button>
+                </form>
+                <a href="/game.html"><button type="button" class="btn btn-outline-primary">Play Again</button></a>
                 <a href="/"><button type="button" class="btn btn-outline-secondary">Go Home</button></a>
+
             </div>
         </div>
     </div>
@@ -31,7 +36,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
-    <script src="js/highscores.js"></script>
+    <script src="js/end.js"></script>
 </body>
 
 </html>

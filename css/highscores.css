@@ -1,0 +1,17 @@
+#high-score-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 60px;
+}
+
+.high-score {
+    font-size: 2rem;
+    color: white;
+    letter-spacing: 3px;
+
+}
+
+#final-score {
+    font-size: 3.5rem;
+    padding-bottom: 60px;
+}
