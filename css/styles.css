@@ -74,12 +74,10 @@ body {
     filter: blur(40px);
 }
 
-.btn {
-    color: #fff;
-    font-size: 1.2vw;
-    margin-bottom: 20px;
+/* .btn {
+  
 
-}
+} */
 
 /* Form */
 
@@ -92,19 +90,21 @@ form {
 
 input {
     margin-bottom: 1rem;
-    width: 12vw;
+    width: 20vw;
     padding: 1vh 2vw;
-    font-size: 1.3rem;
+    font-size: 1.5vw;
     text-align: center;
 
 
 }
 
 .btn {
-    width: 12vw;
     text-align: center;
     padding: 1vh 2vw;
     color: white !important;
+    font-size: 1.5vw;
+    margin-bottom: 20px;
+    width: 20vw;
 }
 
 #final-score {
@@ -116,13 +116,9 @@ input {
 
 @media (max-width: 768px) {
 
-    #home-menu {
-        width: 70%;
-        ;
-    }
 
     #home-menu>h1 {
-        font-size: 8vw;
+        font-size: 10vw;
 
     }
 
@@ -133,13 +129,14 @@ input {
     }
 
     .btn {
-        font-size: 3vw;
-        width: 30vw;
+        font-size: 5vw;
+        width: 60vw;
 
     }
 
     input {
-        width: 30vw;
+        width: 60vw;
+        font-size: 5vw;
     }
 
 
@@ -147,10 +144,7 @@ input {
 
 @media (min-width: 768px) and (max-width: 991px) {
 
-    #home-menu {
-        width: 70%;
-        ;
-    }
+
 
     #home-menu>h1 {
         font-size: 8vw;
