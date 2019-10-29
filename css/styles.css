@@ -130,13 +130,17 @@ input {
 
     .btn {
         font-size: 5vw;
-        width: 60vw;
+        width: 50vw;
 
     }
 
     input {
         width: 60vw;
         font-size: 5vw;
+    }
+
+    #home-menu {
+        min-width: 70vw;
     }
 
 
@@ -147,7 +151,7 @@ input {
 
 
     #home-menu>h1 {
-        font-size: 8vw;
+        font-size: 6vw;
 
     }
 
@@ -159,7 +163,7 @@ input {
 
     .btn {
         font-size: 3vw;
-        width: 30vw;
+        width: 25vw;
 
     }
 

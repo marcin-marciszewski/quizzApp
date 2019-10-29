@@ -16,13 +16,15 @@ let availableQuestions = [];
 let questions = [];
 
 fetch(
-  "https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple"
-)
+    "https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple"
+  )
   .then(res => {
     return res.json();
+    console.log(res);
   })
   .then(loadedQuestions => {
     questions = loadedQuestions.results.map(loadedQuestion => {
+
       const formattedQuestion = {
         question: loadedQuestion.question
       };
@@ -72,11 +74,18 @@ getNewQuestion = _ => {
 
   currentQuestion = availableQuestions[questionIndex];
 
-  question.innerText = currentQuestion.question;
+  decodeHtml = (html) => {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
+  }
+
+  question.innerText = decodeHtml(currentQuestion.question);
+
 
   answers.forEach(answer => {
     const number = answer.dataset["number"];
-    answer.innerText = currentQuestion["choice" + number];
+    answer.innerText = decodeHtml(currentQuestion["choice" + number]);
   });
 
   availableQuestions.splice(questionIndex, 1);
@@ -106,6 +115,8 @@ answers.forEach(answer => {
     }, 1000);
   });
 });
+
+
 
 incrementScore = nume => {
   score += nume;
