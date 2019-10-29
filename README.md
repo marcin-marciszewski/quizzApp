@@ -5,7 +5,7 @@ The application was created to practice vanilla JavaScript. All the question com
 Deployment: http://thequiz.gq/
 
 <h2>Technologies Used</h2>
-- HTML
-- CSS
-- JavaScript 
-- Bootstrap
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li> 
+<li>Bootstrap</li>
